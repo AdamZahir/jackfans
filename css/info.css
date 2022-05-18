@@ -1,0 +1,133 @@
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    @font-face { /*--1--*/
+        font-family:Dreamland;
+        src: url(../fuentes/Dreamland\ FREE.ttf);
+    }
+  
+
+    @font-face { /*--1--*/
+        font-family: vcr_osd_mono;
+        src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+    }
+
+
+    html{
+        background-color: #7e395c;;
+    }
+/*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;  font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+    width: 100%; height: 5%;
+}
+
+nav{
+    position: fixed;
+    text-align: right;
+    width: 100%;  padding: 25px 2px ; height: 12%;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------  TIRA   --------------------------------------------------------------*/
+#contenedor {
+    text-align: center;
+    color: rgb(245, 19, 19);
+    width: 100%; height: 100%;
+    margin: auto; /*CENTRAR DIV*/
+  ;
+    overflow: hidden;
+}
+
+#slider { 
+    width: 2500px; 
+    height:192px;
+    background-image: url(../imagenes/tira.png);
+    background-size: 100% 100%; 
+    animation: slider 60s infinite linear;
+}
+
+@keyframes slider{
+    to{ background-position: 1280px; }
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*----------   CONTENIDO   ------------------------------------------------------------------*/
+main{ 
+    width: 1450px; height: 1200px;
+    background-color: #000000;
+    margin: auto; padding: 0.5em; margin-top: 5em;  margin-bottom: 3em;
+}
+
+img{
+    height: 100%;   width: 100%;
+}
+
+aside#izquierda {
+    height: 25%;
+    width: 20%;
+    background-color:  rgb(4, 76, 92);
+    float: right;
+    margin: 0.5em;  
+    }
+
+article {
+    padding-top: 2% ;
+    text-align: center;
+    width: 78%; height: 25%;
+    background-color:#ffffff; 
+    margin: 0.5em;  
+    font-size: 20px;
+}
+
+.carrera {
+    padding-top: 2% ;
+    text-align: center;
+    width: 98%; 
+    background-color:#ffffff; 
+    margin: 0.5em;  
+    font-size: 20px;
+}
+
+
+/*----------   parrafos   ------------------------------------------------------------------*/
+
+p{ /*--texto parrafo  ------*/
+font-size: large;
+font-family: 'Oswald', sans-serif;
+text-align: left;
+padding-left: 2%;
+}
+h3{ /*--titulos  ------*/
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    padding-left: 2%;
+    }
+
+h1{ /*--titulos  ------*/
+    font-size: 35px;
+    font-family:Dreamland;
+}

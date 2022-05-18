@@ -1,0 +1,266 @@
+
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    html{
+        width: 100%; height: 100%;
+        background-color: black;
+    }
+
+    body {
+        width:100%; height: 1200px;
+        background-color: #7e395c;
+        margin: auto;
+    }
+
+@font-face { /*--1--*/
+    font-family: vcr_osd_mono;
+    src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+}
+
+
+
+/*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;  font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+    width: 100%; height: 5%;
+}
+
+nav{
+    position: fixed;
+    text-align: right;
+    width: 100%;  padding: 25px 2px ; height: 12%;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*------------  DESCRIPCION  ---------------------------------------------------------------*/
+div#descripcion{
+    background-color: #76e2dc; 
+    width: 90%; height: 13%;
+    margin: 0 auto; margin-top: 5%; text-align: center;
+
+    border: 20px;
+    border-style: double ;
+    border-radius: 23%; 
+    color: #7e395c;
+
+    font-family: 'Truculenta', sans-serif;  font-size: 20px;  
+}
+
+h2{
+    font-family: 'Oswald', sans-serif; 
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+.slides {
+    padding: 0;
+    width: 69%; height: 42%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+  
+}
+
+.slide {
+    top: 40%;
+    opacity: 0;
+    width: 609px;
+    height: 42%;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+
+}
+
+.slide  {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {             /* FLECHAS --------------------*/
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    display: none;
+    top: 30%;
+    border: none;
+   line-height: 210%;
+   text-align: center;
+   color: #ffbd46;
+   opacity: 20%;
+font-size: 150pt; 
+
+margin: 0px;
+   
+}
+
+.slide:hover + .nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {  opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+
+input:checked + .slide-container .nav label {  display: block  }
+
+
+
+
+
+/* BOTONES-----------------------------------*/
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+.nav-dots .nav-dot {
+    display: inline-block;
+    top: 170px;
+    width: 30px;
+    height: 11px;
+    background: #ffbd46;
+    position: relative;
+    border-radius: 0%;
+    opacity: .2 ;
+}
+
+.nav-dots .nav-dot:hover { 
+   opacity: .5;
+}
+
+.nav-dots .nav-dot.active { 
+    opacity: 1;
+ }
+
+input#vid-1:checked ~ .nav-dots label#vid-dot-1,
+input#vid-2:checked ~ .nav-dots label#vid-dot-2,
+input#vid-3:checked ~ .nav-dots label#vid-dot-3,
+input#vid-4:checked ~ .nav-dots label#vid-dot-4,
+input#vid-5:checked ~ .nav-dots label#vid-dot-5,
+input#vid-6:checked ~ .nav-dots label#vid-dot-6,
+input#vid-7:checked ~ .nav-dots label#vid-dot-7,
+input#vid-8:checked ~ .nav-dots label#vid-dot-8,
+input#vid-9:checked ~ .nav-dots label#vid-dot-9,
+input#vid-10:checked ~ .nav-dots label#vid-dot-10
+{
+    background: #ffbd46;
+    opacity: 1;
+}
+
+
+
+/*----------------   PIE DE PAG   ----------------------------------------------------------*/
+footer{
+    width: 100%; height: 20%;
+    margin-top: 25%;
+    background-color: #000000;
+}
+ #tit{
+        color: aqua;
+        margin-left: 20%;
+        font-size: 20px;  font-family: 'Oswald', sans-serif;
+    }
+    
+   .redes{
+    color: #ffffff;
+    margin-left: 20%; padding-bottom: 3%;
+    font-family: 'Truculenta', sans-serif;  font-size: 20px;  
+    
+    }
+
+#uno { width: 70px; height: 70px;
+    background-color: #7e395c;
+    float: right; 
+    margin-top: 130px;}
+
+#dos { width: 70px; height: 70px;
+    background-color:#ffbd46 ;
+    float: right;
+    margin-top: 130px;}
+
+#tres { width: 70px; height: 70px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 130px; }
+
+#cuatro { width: 70px; height: 70px;
+    background-color: #76e2dc; 
+    float: right;
+    margin-top: 130px; }
+
+#cinco { width: 70px; height: 70px;
+    background-color: #000000;
+    float: right; 
+    margin-top: 130px;
+    border: 3px solid #ffffff;}
+
+
+    ul{ padding-top: 12px; }
+
+    li { text-align: center; }
+
+
+
+
+
+
+
+
+ 

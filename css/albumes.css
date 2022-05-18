@@ -1,0 +1,169 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+
+    @font-face { /*--1--*/
+        font-family: vcr_osd_mono;
+        src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+    }
+    
+    
+    
+    /*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;  font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+}
+
+nav{
+    position: fixed;
+    width: 100%;  padding: 25px 2px; 
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+html{
+    width: 100%; height: 100%;
+    background-color: #7e395c;
+}
+
+
+    main {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    background-color:  #7e395c;
+   
+    justify-content: center;
+    align-items: baseline;
+    font-family: sans-serif;
+    }
+
+/*------------  DESCRIPCION  ---------------------------------------------------------------*/
+div#descripcion{
+    background-color: #76e2dc; 
+    width: 90%; height: 10%;
+    margin: 0 auto; margin-top: 5%; text-align: center;
+
+    border: 20px;
+    border-style: double ;
+    border-radius: 23%; 
+    color: #7e395c;
+
+    font-family: 'Truculenta', sans-serif;  font-size: 23px;  
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+
+/*----------------------------- CARTELES ----------------------------------------*/
+    .contenedor{
+        
+    width: 100%; 
+    margin-top: 2%;
+    padding-bottom: 5%;
+    max-width: 1100px;
+    }
+
+    .carta{
+        width: 90%;
+        margin: 20px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #76e2dc; 
+        box-shadow:  0px 1px 10px rgba(0, 0, 0, 2);
+        cursor: default;
+    }
+
+    .carta .contenido{
+        padding: 10px;
+        text-align: left;
+        padding-left: 50px;
+    }
+
+
+    .carta img{
+        width: 300px;
+        height: 300px;
+        margin-left: 20px;
+        padding: 2%;
+    }
+    
+div li a{
+    float: left; color: rgb(0, 0, 0); 
+    font-family: 'Truculenta', sans-serif;  
+    font-size: 19px;
+    font-weight: bold;
+}
+
+    .nom{
+        color: #ffbd46 ;
+         text-shadow: 2px 2px 2px #7e395c;
+         font-size: 20px;  
+         font-family: 'Oswald', sans-serif;
+         text-align: center;
+    }
+
+
+
+    ul{ padding-top: 12px; }
+
+    li { padding: 4px; text-align: center;}
+
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------Micro ----------------------------------------------*/
+   
+.micro{
+    background-color: #7e395c;
+    height: 850px;
+    cursor: pointer;
+}
+
+
+
+
+
+table { padding: 1px; margin: 1px; margin: auto; }
+
+tr{ padding: 18px; }
+
+td{ padding: 40px;}
+
+.micropop {
+    transition: transform .2s; 
+    margin-top: 20%;
+    height: 200px; width: 200px;
+  }
+  
+  .micropop:hover {
+    transform: scale(1.4); 
+  }
+  
+
+
+ 
+
+
+  /*----------------------------------------------------*/     

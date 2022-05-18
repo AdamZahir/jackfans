@@ -1,0 +1,59 @@
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    html{
+        width: 100%; height: 100%;
+        background-color: black;
+    }
+
+    body {
+        width:100%; height: 100%;
+        background-color: #000000;
+        margin: auto;
+    }
+
+@font-face { /*--1--*/
+    font-family: vcr_osd_mono;
+    src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+}
+
+
+/*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;
+    font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+    width: 100%; height: 5%;
+}
+
+nav{
+    position: fixed;
+    text-align: right;
+    width: 100%;  padding: 25px 2px ; height: 12%;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+img{
+  margin: 30px 0px 0px 500px;
+}

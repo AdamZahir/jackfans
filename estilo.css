@@ -1,0 +1,198 @@
+
+*{  margin:0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    html{
+        width: 100%; height: 100%;
+        background-color: black;
+    }
+
+    body {
+        width:100%; height: 100%;
+        background-color: pink;
+        margin: auto;
+    }
+
+@font-face { /*--1--*/
+    font-family: vcr_osd_mono;
+    src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+}
+
+
+
+/*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;  font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+    width: 100%; height: 5%;
+}
+
+nav{
+    position: fixed;
+    text-align: right;
+    width: 100%;  padding: 25px 2px ; height: 12%;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*-------------------   iMAGENES   ----------------------------------------------------------*/
+
+section#slider {
+    width: 100%;  height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+div#content-images-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  height: 100%;
+}
+
+div.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  height: 112%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: COVER;
+}
+
+
+h1#slider-text{
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    font-family: vcr_osd_mono;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    background: linear-gradient(0deg, #76e2dc 0%, rgb(255, 213, 0) 32%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.text-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+/*------------   INTRO   --------------------------------------------------------------------*/
+section#content{
+    width: 100%;
+    height: 20%;
+   
+    padding-top: 0px;
+    background-color: #ffffff;
+}
+
+img{
+    float: left;
+    height: 200px;
+    padding-left: 5%;
+}
+
+
+#intro{
+    padding-top: 4%;
+    padding-bottom: 10%;
+    background: #ffffff ;
+}
+
+article{
+    width: 50%;
+    height: 100%;
+    background-color: #7e395c ; 
+    margin-top: 30%;
+    
+    margin: 0 auto; 
+
+    border: 20px;
+    border-style: double ;
+    border-radius: 23%; 
+
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff; 
+    text-align: center; font-size: 25px ;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*----------------   PIE DE PAG   ----------------------------------------------------------*/
+footer{
+    width: 100%; height: 30%;
+    margin-top: 25%;
+    background-color: #000000;
+}
+ #tit{
+        color: aqua;
+        margin-left: 20%;
+        font-size: 20px;  font-family: 'Oswald', sans-serif;
+    }
+    
+   .redes{
+    color: #ffffff;
+    margin-left: 20%; padding-bottom: 3%;
+    font-family: 'Truculenta', sans-serif;  font-size: 20px;  
+    
+    }
+
+#uno { width: 70px; height: 70px;
+    background-color: #7e395c;
+    float: right; 
+    margin-top: 130px;}
+
+#dos { width: 70px; height: 70px;
+    background-color:#ffbd46 ;
+    float: right;
+    margin-top: 130px;}
+
+#tres { width: 70px; height: 70px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 130px; }
+
+#cuatro { width: 70px; height: 70px;
+    background-color: #76e2dc; 
+    float: right;
+    margin-top: 130px; }
+
+#cinco { width: 70px; height: 70px;
+    background-color: #000000;
+    float: right; 
+    margin-top: 130px;
+    border: 3px solid #ffffff;}
+
+
+    ul{ padding-top: 12px; }
+
+    li { text-align: center; }
+
+   

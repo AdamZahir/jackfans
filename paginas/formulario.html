@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> Formulario </title>
+        <link href="../css/formulario.css" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Truculenta:opsz,wght@12..72,200&family=Zen+Loop&display=swap" rel="stylesheet">
+
+    </head>
+
+<body> 
+<!-------------------   BARRA    --------------------------------------------------------->
+<header> 
+    <nav>
+        <a href="index.html">  inicio  </a>  
+        <a href="../paginas/info.html">  Acerca de  </a> 
+        <a href="../paginas/albumes.html">  Música  </a>  
+        <a href="../paginas/videos.html">  Animaciones </a> 
+        <a href="../paginas/formulario.html">  Suscribete  </a>  
+        <a href="../paginas/creditos.html">  Créditos  </a>  
+    </nav>
+</header>
+<!---------------------------------------------------------------------------------------->
+
+
+
+
+
+        <div id="sub" >
+
+        <h2> ¿Quieres recibir noticias de la pagina? </h2> 
+        <h2> ¡Registrate! </h2> <br>
+        
+
+        <form class="subs" action="../guardar.php" method="POST" id="contact_form" runat="server" enctype="multipart/form-data" >
+
+             
+
+            <label for="Correo"> <h4> Ingresa tu correo electronico para poder contactarnos cotigo. </h4> </label> 
+            <input type="email" id="Correo" name="Correo" maxlength="60" required> <br><br>
+
+            <label for="Nombre"> <h4> Nombre: </h4>  </label> 
+            <input type="text" id="Nombre" name="Nombre"  maxlength="20" required>  <br><br>
+
+            <label for="Apellido"> <h4> Apellido: </h4> </label> 
+            <input type="text" id="Apellido" name="Apellido"  maxlength="30" required> <br><br>
+
+            
+            <h4> ¿Tienes más de 12 años? </h4> 
+            <input type="radio" name="Edad" value="Mayor"> <label for="Edad"> Si, soy mayor de 12 años </label>  <br>
+            <input type="radio" name="Edad" value="Menor"> <label for="Edad"> No, soy menor de 12 años </label>
+    
+
+            <br> <br> <button class="submit" type="sumbit"> Enviar suscripcion </button>
+            
+        </form>
+
+        </div>
+
+        <img src="../imagenes/sub img.png"> </div>
+
+    </body>
+</html>

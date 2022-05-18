@@ -1,0 +1,90 @@
+*{  margin: 0; padding: 0; }
+
+
+@font-face { /*--1--*/
+    font-family: vcr_osd_mono;
+    src: url(../fuentes/vcr_osd_mono_1.001.ttf);
+}
+
+@font-face { /*--1--*/
+    font-family:Dreamland;
+    src: url(../fuentes/Dreamland\ FREE.ttf);
+}
+
+
+
+
+html{
+    width: 750px; height: 750px;
+    background-color: rgb(7, 7, 7);
+}
+   /*-------------------   BARRA   -------------------------------------------------------------*/
+header{
+    background-color: #000000;
+    text-align: right;
+    font-size: 20px;  font-family: vcr_osd_mono;
+    padding: 25px 2px ; 
+    width: 100%; height: 5%;
+}
+
+nav{
+    position: fixed;
+    text-align: right;
+    width: 100%;  padding: 25px 2px ; height: 12%;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+#sub { 
+    width: 900px;
+    height: 510px;
+    background-color: #7e395c; 
+    margin: 100px 300px 0px 300px ; 
+ 
+   
+    color: #ffbd46 ;
+    text-shadow: 2px 2px 2px #7e395c;
+    text-align: center;
+}
+
+   img {
+    margin-left:  450px ; 
+    }
+
+
+h2{
+    font-family:Dreamland;
+    font-size: 35px ;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.subs{
+    font-family: 'Truculenta', sans-serif;  
+    font-size: 20px; 
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+    input:focus {
+        background-color:#fae5ad;
+     }
+
+   
